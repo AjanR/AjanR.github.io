@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="Main.css">
+</head>
+<body>
+	<header>
+	<div class="container">
+		<div id="branding">
+			<h1>Audi</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home></a></li>
+					<li><a href="Critical log.html">Critical log</a></li>
+					<li><a href="Customiser.html">Customiser></a></li>
+					<li><a href="Configurator.html">Contact details></a></li>
+					<li><a href="Shop.html">About us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	
+	<section id="showcase">
+		<div class="container">
+			<h1>Power</h1>
+			<p>Brand new and top notch</p>
+		</div>
+	</section>
+
+	<section id="Shop">
+		<div class="container">
+			<h1>Browse our range</h1>
+		
+		<form>
+			<input type="text" name="Search our audi range">
+			<button type="search" class"button_1">Search</button>
+		</form>
+		</div>
+	</section>
+
+	<section id="boxes">
+		<div class="container">
+			<div class="box">
+				<h3>Audi Etron</h3>
+				<img class="mySlides" src="./images/Audi E.jpg" style="width:100%">
+				<img class="mySlides" src="./images/Audi e2.jpg" style="width:100%"> 
+				<img class="mySlides" src="./images/Audi e3.jpg" style="width:100%">
+				 <button class="1-button 1-black 1-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  				<button class="1-button 1-black 1-display-right" onclick="plusDivs(1)">&#10095;</button>
+  				<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+  				showDivs(slideIndex += n);
+		}
+
+				function showDivs(n) {
+ 				 var i;
+ 				 var x = document.getElementsByClassName("mySlides");
+ 				 if (n > x.length) {slideIndex = 1}    
+ 				 if (n < 1) {slideIndex = x.length}
+ 				 for (i = 0; i < x.length; i++) {
+  				   x[i].style.display = "none";  
+ 				 }
+  				x[slideIndex-1].style.display = "block";  
+				}
+				</script>
+
+
+
+				</div>
+				<div class="box">
+				<h3> Accessories</h3>
+				<img class="mySlide" src="./images/Audi W.jpg" style="width:100%">
+				<img class="mySlide" src="./images/Audi w2.jpg" style="width:100%"> 
+				<img class="mySlide" src="./images/Audi w3.jpg" style="width:100%">
+				<button class="2-button 2-black 2-display-left" onclick="plusDivs(-1)">
+
+		
+
+
+	<div class= "box">
+	<script src="js/jquery.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script>
+		x = navigator.geolocation;
+
+		x.getCurrentPosition(success, failure);
+
+		function success(position) 
+		{
+			var mylat = position.coords.latitude;
+			var mylong = position.coords.longitude;
+			$('#lat').html(mylat);
+			$('#long').html(mylong);
+
+			var coords = new google.maps.LatLng(mylat, mylong)
+
+			var mapOptions = {
+				zoom:16,
+				center:coords,
+				mapTypeId:google.maps.MapTypeId.ROADMAP
+			}
+
+			var map = new google.maps.Map(document.getElementbyId("map"),mapOptions);
+		}
+		
+		function failure()
+		{
+			$('#lat').html("<p> It didn't work, coordinates not found")
+		}
+
+	</script>
+	<style>
+	#map{
+		width: 400px
+		height: 400px;
+	}
+
+	</style>
+	<body>
+
+	<div id="map">
+		
+	</div>
+
+	<div id="lat"></div>
+
+	<div id="long"></div>
+</body>
+</div>
+</button>
+</div>
+</div>
+</section>
+</body>
+</html>
+
+
+
+
+
+				
+
+
+
+
+				
+			
+	
+	
+
+

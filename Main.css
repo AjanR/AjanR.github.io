@@ -1,0 +1,311 @@
+body{
+	
+	background: red;
+	color: silver;
+	font-family:arial;
+	font-size: 20px;
+	line-height:1.5;
+	padding: 0;
+	margin: 0;
+
+}
+.container
+{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+.button_1
+{
+	background:silver ;
+	float:center;
+	border:0;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
+
+header
+{
+	background:black;
+	color: silver;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom: white 3px solid;
+}
+
+header a
+{
+	color:silver;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px
+}
+
+header ul
+{
+	margin:0;
+	padding:0;
+}
+header li
+{
+	float:left;
+	display:inline;
+	padding:0 20px  0 20px;
+}
+
+header .highlight, header .current a
+{
+	color: red;
+	font-weight: bold;
+
+}
+#showcase
+{
+	min-height: 300px;
+	background:url('./images/madness.jpg') no-repeat 100px -180px;
+	text-align: center;
+	border-bottom: silver;
+
+}
+
+#showcase h1
+{
+	margin-top: 100px;
+	font font-size:55px;
+	margin-bottom: 10px;
+}
+
+#showcase p
+{
+	font-size: 20px;
+}
+
+#showcase1
+{
+	min-height: 400px;
+	background:url('./images/configurator.jpg' ) no-repeat 500px;
+	text-align: center;
+	border-bottom: silver;
+	
+}
+
+#showcase1 h1
+{
+	margin-top: 100px;
+	font font-size:55px;
+	margin-bottom: 10px;
+	text-decoration-color: black;
+}
+#showcase2
+{
+	min-height: 700px;
+	background:url('./images/Audi TTRS.jpg' ) no-repeat  -220px  -340px  ;
+	text-align: center;
+	border-bottom: silver;
+	float:left
+	min-width: 1000px
+}
+	
+
+#Shop
+{
+	padding: 20px;
+	margin-bottom: : :300px;
+	color: white;
+	background:black;
+}
+
+#Shop h1
+{
+	float: center;
+	margin-bottom: : :300px;
+}
+
+#Shop form
+{
+	float:right;
+	margin-top: 15px;
+}
+
+#Shop input[type="text"]
+{
+	padding: 4px;
+	height:25px;
+	width:250px;
+}
+
+#boxes
+{
+	margin-top: 20px;
+}
+
+#boxes.box
+{
+	float:left;
+	width:30%;
+
+}
+
+#boxes1
+{
+	margin top: 20px;
+
+}
+
+#boxes1 .box
+{
+	float:left;
+	width:50%;
+	font-size: 20px;
+}
+body, #slider, .wrap, .slide-content
+{
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	width:100%;
+	height:100vh;
+	overflow-x:hidden;
+}
+
+.wrap
+{
+	position: relative;
+}
+
+.slide
+{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.slide1
+{
+	background-image: url('./images/black a.jpg');
+}
+.slide2
+{
+	background-image: url('./images/eng.jpg');
+}
+.slide3
+{
+	background-image: url('./images/tire.jpg');
+}
+
+.slide-content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+}
+
+.slide-content span
+{
+	font-size: 5rem;
+	color:white;
+}
+
+.arrow
+{
+	cursor:pointer;
+	position:absolute;
+	top:50%;
+	margin-top:-35px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#arrow-left
+{
+	border-width: 30px 40px 30px 0;
+	left:0;
+	margin-left:30px;
+	border-color: transparent white transparent transparent;
+}
+#arrow-right
+{
+	border-width: 30px 0 30px 40px;
+	border-color: transparent transparent transparent white;
+	right:0;
+	margin-right:30px;
+}
+
+
+.cd-builder-steps > ul {
+  height: 100%;
+  overflow: hidden;
+}
+.cd-builder-steps .builder-step {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  visibility: hidden;
+  transition: visibility .5s;
+}
+.cd-builder-steps .builder-step.active {
+  position: relative;
+  z-index: 2;
+  visibility: visible;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+  color: silver;
+  background-color: black;
+}
+
+a {
+  color: #5D7C89;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cd-nugget-info {
+  position: relative;
+  display: block;
+  margin-bottom: 1em;
+  padding: .8em;
+  background: #5D7C89;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+}
+.cd-builder-secondary-nav
+{
+	float:left;
+	display:inline;
+	padding:0 20px  0 20px;
+}
+
+nav a
+{
+	float:left;
+	display:inline;
+	padding:0 20px  0 20px;
+}
+}
+
+ 
+
+
+}

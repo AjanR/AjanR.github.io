@@ -1,0 +1,483 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"star",
+				"startSlide"
+			],
+			[
+				"slider",
+				"sliderImages"
+			],
+			[
+				"arrow",
+				"arrow-right"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"flex-",
+				"flex-direction"
+			],
+			[
+				"backgo",
+				"background-image"
+			],
+			[
+				"coo",
+				"coordinates"
+			],
+			[
+				"m",
+				"mylong"
+			],
+			[
+				"my",
+				"mylat"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"s",
+				"section\tTag"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"text",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width\">\n\t<title>Test</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"Main.css\">\n</head>\n<body>\n\t<header>\n\t<div class=\"container\">\n\t\t<div id=\"branding\">\n\t\t\t<h1>Audi</h1>\n\t\t\t</div>\n\t\t\t<nav>\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"index.html\">Home></a></li>\n\t\t\t\t\t\n\t\t\t\t\t<li><a href=\"Customiser.html\">Customiser></a></li>\n\t\t\t\t\t<li><a href=\"Configurator.html\">Contact details></a></li>\n\t\t\t\t\t<li><a href=\"Shop.html\">About us</a></li>\n\t\t\t\t</ul>\n\t\t\t</nav>\n\t\t</div>\n\t</header>\n\t\n\t\n\t<section id=\"showcase\">\n\t\t<div class=\"container\">\n\t\t\t<h1>Power</h1>\n\t\t\t<p>Brand new and top notch</p>\n\t\t</div>\n\t</section>\n\n\t<section id=\"Shop\">\n\t\t<div class=\"container\">\n\t\t\t<h1>Browse our range</h1>\n\t\t\n\t\t<form>\n\t\t\t<input type=\"text\" name=\"Search our audi range\">\n\t\t\t<button type=\"search\" class\"button_1\">Search</button>\n\t\t</form>\n\t\t</div>\n\t</section>\n\n\t<section id=\"boxes\">\n\t\t<div class=\"container\">\n\t\t\t<div class=\"box\">\n\t\t\t\t<h3>Audi Etron</h3>\n\t\t\t\t<img class=\"mySlides\" src=\"./images/Audi E.jpg\" style=\"width:100%\">\n\t\t\t\t<img class=\"mySlides\" src=\"./images/Audi e2.jpg\" style=\"width:100%\"> \n\t\t\t\t<img class=\"mySlides\" src=\"./images/Audi e3.jpg\" style=\"width:100%\">\n\t\t\t\t <button class=\"1-button 1-black 1-display-left\" onclick=\"plusDivs(-1)\">&#10094;</button>\n  \t\t\t\t<button class=\"1-button 1-black 1-display-right\" onclick=\"plusDivs(1)\">&#10095;</button>\n  \t\t\t\t<script>\n\t\t\t\tvar slideIndex = 1;\n\t\t\t\tshowDivs(slideIndex);\n\n\t\t\t\tfunction plusDivs(n) {\n  \t\t\t\tshowDivs(slideIndex += n);\n\t\t}\n\n\t\t\t\tfunction showDivs(n) {\n \t\t\t\t var i;\n \t\t\t\t var x = document.getElementsByClassName(\"mySlides\");\n \t\t\t\t if (n > x.length) {slideIndex = 1}    \n \t\t\t\t if (n < 1) {slideIndex = x.length}\n \t\t\t\t for (i = 0; i < x.length; i++) {\n  \t\t\t\t   x[i].style.display = \"none\";  \n \t\t\t\t }\n  \t\t\t\tx[slideIndex-1].style.display = \"block\";  \n\t\t\t\t}\n\t\t\t\t</script>\n\n\n\n\t\t\t\t</div>\n\t\t\t\t<div class=\"box\">\n\t\t\t\t<h3> Accessories</h3>\n\t\t\t\t<img class=\"mySlide\" src=\"./images/Audi W.jpg\" style=\"width:100%\">\n\t\t\t\t<img class=\"mySlide\" src=\"./images/Audi w2.jpg\" style=\"width:100%\"> \n\t\t\t\t<img class=\"mySlide\" src=\"./images/Audi w3.jpg\" style=\"width:100%\">\n\t\t\t\t<button class=\"2-button 2-black 2-display-left\" onclick=\"plusDivs(-1)\">\n\n\t\t\n\n\n\t<div class= \"box\">\n\t<script src=\"js/jquery.js\"></script>\n\t<script src=\"http://maps.google.com/maps/api/js?sensor=true\"></script>\n\t<script>\n\t\tx = navigator.geolocation;\n\n\t\tx.getCurrentPosition(success, failure);\n\n\t\tfunction success(position) \n\t\t{\n\t\t\tvar mylat = position.coords.latitude;\n\t\t\tvar mylong = position.coords.longitude;\n\t\t\t$('#lat').html(mylat);\n\t\t\t$('#long').html(mylong);\n\n\t\t\tvar coords = new google.maps.LatLng(mylat, mylong)\n\n\t\t\tvar mapOptions = {\n\t\t\t\tzoom:16,\n\t\t\t\tcenter:coords,\n\t\t\t\tmapTypeId:google.maps.MapTypeId.ROADMAP\n\t\t\t}\n\n\t\t\tvar map = new google.maps.Map(document.getElementbyId(\"map\"),mapOptions);\n\t\t}\n\t\t\n\t\tfunction failure()\n\t\t{\n\t\t\t$('#lat').html(\"<p> It didn't work, coordinates not found\")\n\t\t}\n\n\t</script>\n\t<style>\n\t#map{\n\t\twidth: 400px\n\t\theight: 400px;\n\t}\n\n\t</style>\n\t<body>\n\n\t<div id=\"map\">\n\t\t\n\t</div>\n\n\t<div id=\"lat\"></div>\n\n\t<div id=\"long\"></div>\n</body>\n</div>\n</button>\n</div>\n</div>\n</section>\n</body>\n</html>\n\n\n\n\n\n\t\t\t\t\n\n\n\n\n\t\t\t\t\n\t\t\t\n\t\n\t\n\n\n",
+			"file": "index.html",
+			"file_size": 3415,
+			"file_write_time": 131600918419770601,
+			"settings":
+			{
+				"buffer_size": 3223,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width\">\n\t<title>Test</title>\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"Main.css\">\n</head>\n<body>\n\t<header>\n\t<div class=\"container\">\n\t\t<div id=\"branding\">\n\t\t\t<h1>Audi</h1>\n\t\t\t</div>\n\t\t\t<nav>\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"index.html\">Home></a></li>\n\t\t\t\t\t\n\t\t\t\t\t<li><a href=\"Customiser.html\">Customiser></a></li>\n\t\t\t\t\t<li><a href=\"Configurator.html\">Contact details></a></li>\n\t\t\t\t\t<li><a href=\"Shop.html\">About us</a></li>\n\t\t\t\t</ul>\n\t\t\t</nav>\n\t\t</div>\n\t</header>\n\n\t<section id=\"showcase2\">\n\t\t<div class=\"container\">\n\t\t\t<div id=\"arrow-left\" class\"arrow\"></div>\n\n\t\t\t<h1>About us</h1>\n\t\t</div>\n\t</section>\n\t\n\t<h2>About us</h2>\n\t<p>Audi is one of the UK’s leading premium automotive brands, with a range that currently comprises in excess of 50 different models, all featuring state-of-the-art technology and world-class quality. The brand with the four rings has a clear objective to become the overall number one premium car brand, and we’ll do this by continuing to design, manufacture and deliver some of the world's most sporty, progressive and sophisticated cars.\n\tOur ambitious growth objectives helped us reach key milestones in recent years, and in 2015 we celebrated two million sales since the brand first came to the UK in 1965. Worldwide, in 2014 Audi achieved an all-time best ever sales record of 1,741,100 cars, a 10.5 per cent improvement over the previous year. Sales in the UK increased by 11.8 per cent year-on-year to 158,987 cars.\n\tTo sustain the technological lead embodied in our Vorsprung durch Technik philosophy, Audi plans to invest around €24 billion between now and 2019, 70 per cent of which will be channelled into new model development and innovative technologies. Audi lives up to its corporate responsibility and has strategically established the principle of sustainability for its products and processes. The long-term goal is CO2-neutral mobility. This philosophy also applies to the brand’s sports car racing activities, in which Audi made history in 2012 by winning the Le Mans 24-hour race using pioneering hybrid diesel technology in the R18 e-tron quattro. It went </p>\n</body>\n</body>\n</html>\n",
+			"file": "Shop.html",
+			"file_size": 2314,
+			"file_write_time": 131601101249240350,
+			"settings":
+			{
+				"buffer_size": 2229,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Customiser.html",
+			"settings":
+			{
+				"buffer_size": 2040,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Configurator.html",
+			"settings":
+			{
+				"buffer_size": 1650,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Main.css",
+			"settings":
+			{
+				"buffer_size": 3794,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Ajan/AppData/Roaming/Sublime Text 3/Packages/User/Chrome.sublime-build",
+			"settings":
+			{
+				"buffer_size": 88,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "untitled.sublime-build"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Ajan/Desktop/website/Jquery.html",
+		"/C/Users/Ajan/Desktop/website/Customiser.Html"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Shop.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								509,
+								509
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Customiser.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Configurator.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								352,
+								352
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2594,
+								2594
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4355.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Ajan/AppData/Roaming/Sublime Text 3/Packages/User/Chrome.sublime-build",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 88,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								88,
+								88
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 136.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/Chrome.sublime-build",
+	"project": "/C/Users/Ajan/Desktop/Project/Sublime text pr.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
